@@ -1,95 +1,107 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User List</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>User List</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-</head>
+  <body>
+	  <main>
+    <div class="box">
+      <!-- sidebar -->
+      <nav class="sidebar">
+        
+          <div class="header-side">
+            <p>MY ACOUNT</p>
+            <i class="far fa-share-square"></i>
+          </div>
+          <div class="information">
+            <img class="information__img" src="img/pesron.svg" alt="person" />
+            <h1 class="information__text">Hello <span>Bret</span></h1>
+            <p class="information__id"><span>Admin </span>id789038</p>
+          </div>
+          <div class="btn">
+            <p>Add User</p>
+            <i class="fas fa-plus"></i>
+          </div>
 
-<body>
-	<div class="box">
-		<div class="sidebar">
-			<div class="header-side">
-				<p>My Admin</p>
-				<i class="far fa-share-square"></i>
-			</div>
-			<div class="menu">
-				<img src="img/pesron.svg" alt="">
-				<h1 class="hello">Hello <span>Bret</span> </h1>
-				<p class="inform-admin"><span>Admin </span>id789038</p>
-			</div>
-			<div class="button">
-				<p>Add User</p>
-				<i class="fas fa-plus"></i>
-			</div>
+          
+            <div class="menu">
+              <ul>
+                <li>
+                  <div class="menu__list">
+                    <i class="fab fa-slack"></i>
+                    <p>Dashboard</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="menu__list">
+                    <i class="far fa-calendar-alt"></i>
+                    <p>Calendar</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="menu__list">
+                    <i class="fas fa-user"></i>
+                    <p>Users</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="menu__list">
+                    <i class="fas fa-tasks"></i>
+                    <p>Tasks</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="menu__logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <p>Log Out</p>
+            </div>
+        
+        
+      </nav>
 
-			<div class="menu-list">
-				<div class="first-menu">
-					<ul>
-						<li>
-							<div class="list">
-								<i class="fab fa-slack"></i>
-								<p>Dashboard</p>
-							</div>
-						</li>
-						<li>
-							<div class="list">
-								<i class="far fa-calendar-alt"></i>
-								<p>Calendar</p>
-							</div>
-						</li>
-						<li>
-							<div class="list">
-								<i class="fas fa-user"></i>
-								<p>Users</p>
-							</div>
-						</li>
-						<li>
-							<div class="list">
-								<i class="fas fa-tasks"></i>
-								<p>Tasks</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="logout">
-					<i class="fas fa-sign-out-alt"></i>
-					<p>Log Out</p>
-				</div>
-			</div>
+      <!-- sidebar -->
 
-
-		</div>
-		<div class="content">
-			<div class="header-nav">
-				<div class="left-menu">
-					<ul>
-						<li><a>Users</a></li>
-						<li><a>Subject</a></li>
-						<li><a>Access</a></li>
-					</ul>
-				</div>
-				<div class="search">
-					<i class="fas fa-search"></i>
-					<p>search</p>
-				</div>
-			</div>
-			<div class="user-head">
-				<p>User List</p>
-				<h3><span>10 </span>Users</h3>
-			</div>
-			<div class="table-list">
-			
-			</div>
-		</div>
-	</div>
-	<script src="app.js"></script>
-</body>
-
+      <!-- Content page -->
+      <div class="content">
+        <div class="header-nav">
+          <div class="menu-top">
+            <ul>
+              <li><a>Users</a></li>
+              <li><a>Subject</a></li>
+              <li><a>Access</a></li>
+            </ul>
+          </div>
+          <div class="search">
+			  <input class="search__input" type="text" placeholder="search...">
+            <i class="fas fa-search search__icon"></i>
+            <p class="search__text">search</p>
+          </div>
+        </div>
+        <div class="user-head">
+          <p>User List</p>
+          <h3><span>10 </span>Users</h3>
+        </div>
+        <div class="table-list"></div>
+      </div>
+    </div>
+    <!-- Content page -->
+</main>
+    <script src="app.js"></script>
+  </body>
 </html>

@@ -1,0 +1,28 @@
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $color-bg-sideabr;
+  padding-top: 5px;
+  @include header;
+  .menu-top ul li a {
+    padding: 0 10px;
+    font-size: 17px;
+  }
+  .menu-top ul li a:hover {
+    border-bottom: 3px solid $color-button;
+    cursor: pointer;
+  }
+
+  .search {
+    &__text  {
+      font-size: 17px;
+      margin-left: 10px;
+    }
+	&__icon  {
+	  width: 5px;
+	  margin: 0 5px;
+	  font-size: 13px;
+	}
+  }
+
+}

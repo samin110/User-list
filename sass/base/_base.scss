@@ -1,0 +1,30 @@
+@import "../abstracts/variables";
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: $color-background;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	display: flex;
+	margin: 0 auto;
+	width: 80%;
+	height: 90%;
+	background-color: $color-content;
+	border-radius: 10px;
+  }
+
+  .content {
+	flex: 5;
+	padding: 20px;
+  }

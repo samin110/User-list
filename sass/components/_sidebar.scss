@@ -1,0 +1,97 @@
+.sidebar {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+  flex: 1;
+  padding: 20px;
+  background-color: rgba($color-bg-sideabr, 0.102);
+
+  .header-side {
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+	border-bottom: 1px solid $color-bg-sideabr;
+	
+    & p {
+      font-family: "Oswald";
+      font-weight: bold;
+	}
+	
+	& i:hover{
+		cursor: pointer;
+		color: $color-button;
+	}
+  }
+
+  .information {
+    margin: 25px 0;
+    font-family: "Wellfleet";
+
+    &__img {
+      width: 40%;
+    }
+
+    &__text {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    &__id {
+      font-family: "Wellfleet";
+	  font-size: 13px;
+	  
+      & span {
+        color: $color-button;
+      }
+    }
+  }
+
+  .menu {
+    margin-top: 30px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+	
+    & ul {
+      display: flex;
+      flex-direction: column;
+	}
+	
+    &__list {
+      display: flex;
+      padding: 10px 6px;
+	  font-size: 12px;
+	  
+      &:hover {
+        background-color: white;
+        border-radius: 6px;
+        cursor: pointer;
+	  }
+	  
+      & i {
+        margin-right: 15px;
+	  }
+	  
+      & p {
+        font-family: "wellfleet";
+      }
+	}
+	
+    &__logout {
+      display: flex;
+      padding: 10px 6px;
+      font-size: 12px;
+      font-family: "wellfleet";
+      & i {
+        margin-right: 15px;
+      }
+
+      &:hover {
+        background-color: $color-white;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.btn {
+	font-size: 13px;
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba($color-button, 1);
+	padding: 12px;
+	color: $color-white;
+	border-radius: 8px;
+	font-family: "wellfleet";
+	cursor: pointer;
+	.fa-plus:hover {
+	  color: rgb(61, 253, 2);
+	}
+  }

@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Wellfleet&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FB976A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  height: 90%;
+  background-color: #F3F0EF;
+  border-radius: 10px;
+}
+
+.content {
+  flex: 5;
+  padding: 20px;
+}
+
+@keyframes user {
+  0% {
+    transform: translateX(30px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+}
+.btn {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2ab82f;
+  padding: 12px;
+  color: #fff;
+  border-radius: 8px;
+  font-family: "wellfleet";
+  cursor: pointer;
+}
+.btn .fa-plus:hover {
+  color: #3dfd02;
+}
+
+.sidebar {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(178, 179, 166, 0.102);
+}
+.sidebar .header-side {
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #B2B3A6;
+}
+.sidebar .header-side p {
+  font-family: "Oswald";
+  font-weight: bold;
+}
+.sidebar .header-side i:hover {
+  cursor: pointer;
+  color: #2ab82f;
+}
+.sidebar .information {
+  margin: 25px 0;
+  font-family: "Wellfleet";
+}
+.sidebar .information__img {
+  width: 40%;
+}
+.sidebar .information__text {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.sidebar .information__id {
+  font-family: "Wellfleet";
+  font-size: 13px;
+}
+.sidebar .information__id span {
+  color: #2ab82f;
+}
+.sidebar .menu {
+  margin-top: 30px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar .menu ul {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .menu__list {
+  display: flex;
+  padding: 10px 6px;
+  font-size: 12px;
+}
+.sidebar .menu__list:hover {
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.sidebar .menu__list i {
+  margin-right: 15px;
+}
+.sidebar .menu__list p {
+  font-family: "wellfleet";
+}
+.sidebar .menu__logout {
+  display: flex;
+  padding: 10px 6px;
+  font-size: 12px;
+  font-family: "wellfleet";
+}
+.sidebar .menu__logout i {
+  margin-right: 15px;
+}
+.sidebar .menu__logout:hover {
+  background-color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #B2B3A6;
+  padding-top: 5px;
+}
+.header-nav .menu-top ul,
+.header-nav .search {
+  display: flex;
+  font-family: "oswald";
+  font-weight: bold;
+  align-items: center;
+}
+.header-nav .menu-top ul li a {
+  padding: 0 10px;
+  font-size: 17px;
+}
+.header-nav .menu-top ul li a:hover {
+  border-bottom: 3px solid #2ab82f;
+  cursor: pointer;
+}
+.header-nav .search__text {
+  font-size: 17px;
+  margin-left: 10px;
+}
+.header-nav .search__icon {
+  width: 5px;
+  margin: 0 5px;
+  font-size: 13px;
+}
+
+/*Content Card */
+.user-head {
+  padding-top: 25px;
+  font-family: "oswald";
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-head p {
+  font-size: 30px;
+}
+
+.user-head h3 {
+  font-size: 17px;
+}
+
+.user-head h3 span {
+  color: #2ab82f;
+}
+
+.table-card {
+  margin-top: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: grid;
+  background-color: white;
+  padding: 5px 0 5px 10px;
+  animation: user 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.table-card:hover {
+  border-left: 3px solid #2ab82f;
+  cursor: pointer;
+}
+
+thead,
+tbody {
+  display: grid;
+  grid-template-columns: 1% 12% 10% 17% 15% 10% 10% 2%;
+  grid-gap: 20px;
+}
+
+.ta-head {
+  font-size: 10px;
+  text-align: left;
+  color: #b9b9b9;
+  font-family: "wellfleet";
+}
+
+thead .ta-head th {
+  font-weight: normal;
+  display: grid;
+  text-align: left;
+}
+
+.ta-body td {
+  font-size: 10px;
+}
+
+tbody .ta-head {
+  display: grid;
+  text-align: left;
+  color: black;
+  font-size: 9px;
+  padding-top: 6px;
+}
+
+.sticker {
+  font-size: 30px;
+}
+
+/*End Content Card */
+
+/*# sourceMappingURL=style.css.map */

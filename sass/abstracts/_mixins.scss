@@ -1,0 +1,9 @@
+@mixin header {
+	.menu-top ul,
+	.search {
+	  display: flex;
+	  font-family: "oswald";
+	  font-weight: bold;
+	  align-items: center;
+	}
+}
