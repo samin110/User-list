@@ -8,6 +8,30 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 15px;
+}
+@media (max-width: 80em) {
+  html {
+    font-size: 95%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 86%;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 66%;
+  }
+}
+@media (min-width: 120em) {
+  html {
+    font-size: 100%;
+  }
+}
+
 body {
   background-color: #FB976A;
   display: flex;
@@ -21,12 +45,34 @@ body {
   width: 80%;
   height: 90%;
   background-color: #F3F0EF;
-  border-radius: 10px;
+  border-radius: 0.66rem;
+}
+@media (max-width: 37.5em) {
+  .box {
+    width: 95%;
+    height: 95%;
+  }
+}
+@media (max-width: 56.25em) {
+  .box {
+    width: 97%;
+    height: 95%;
+  }
 }
 
 .content {
   flex: 5;
-  padding: 20px;
+  padding: 1.3rem;
+}
+@media (max-width: 56.25em) {
+  .content {
+    padding: 1.3rem 0.5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .content {
+    padding: 1.3rem;
+  }
 }
 
 @keyframes user {
@@ -38,66 +84,101 @@ body {
   }
 }
 .btn {
-  font-size: 13px;
+  font-size: 0.86rem;
   display: flex;
   justify-content: space-between;
   background-color: #2ab82f;
-  padding: 12px;
+  padding: 0.8rem;
   color: #fff;
-  border-radius: 8px;
+  border-radius: 0.53rem;
   font-family: "wellfleet";
   cursor: pointer;
+}
+@media (max-width: 80em) {
+  .btn {
+    font-size: 0.61rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 37.5em) {
+  .btn {
+    font-size: 0.5rem;
+  }
 }
 .btn .fa-plus:hover {
   color: #3dfd02;
 }
 
 .sidebar {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 0.66rem;
+  border-bottom-left-radius: 0.66rem;
   overflow: hidden;
   flex: 1;
-  padding: 20px;
+  padding: 1.33rem;
   background-color: rgba(178, 179, 166, 0.102);
 }
 .sidebar .header-side {
-  padding-bottom: 5px;
+  padding-bottom: 0.33rem;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #B2B3A6;
+  border-bottom: 0.066rem solid #B2B3A6;
+}
+@media (max-width: 80em) {
+  .sidebar .header-side {
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+  }
 }
 .sidebar .header-side p {
   font-family: "Oswald";
   font-weight: bold;
+}
+@media (max-width: 80em) {
+  .sidebar .header-side p {
+    margin-right: 0.3rem;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .sidebar .header-side p {
+    font-size: 1.1rem;
+  }
 }
 .sidebar .header-side i:hover {
   cursor: pointer;
   color: #2ab82f;
 }
 .sidebar .information {
-  margin: 25px 0;
+  margin: 1.66rem 0;
   font-family: "Wellfleet";
 }
 .sidebar .information__img {
   width: 40%;
 }
 .sidebar .information__text {
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 1.33rem;
+  margin-top: 1.33rem;
 }
 .sidebar .information__id {
   font-family: "Wellfleet";
-  font-size: 13px;
+  font-size: 0.86rem;
 }
 .sidebar .information__id span {
   color: #2ab82f;
 }
 .sidebar .menu {
-  margin-top: 30px;
-  height: 170px;
+  margin: 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 80em) {
+  .sidebar .menu {
+    margin: 1.3rem 0;
+  }
 }
 .sidebar .menu ul {
   display: flex;
@@ -105,40 +186,54 @@ body {
 }
 .sidebar .menu__list {
   display: flex;
-  padding: 10px 6px;
-  font-size: 12px;
+  padding: 0.66rem 0.4rem;
+  font-size: 0.8rem;
+}
+@media (max-width: 80em) {
+  .sidebar .menu__list {
+    font-size: 0.6rem;
+  }
 }
 .sidebar .menu__list:hover {
   background-color: white;
-  border-radius: 6px;
+  border-radius: 0.4rem;
   cursor: pointer;
 }
 .sidebar .menu__list i {
-  margin-right: 15px;
+  margin-right: 1rem;
 }
 .sidebar .menu__list p {
   font-family: "wellfleet";
 }
 .sidebar .menu__logout {
   display: flex;
-  padding: 10px 6px;
-  font-size: 12px;
+  padding: 0.66rem 0.4rem;
+  font-size: 0.8rem;
   font-family: "wellfleet";
 }
+@media (max-width: 80em) {
+  .sidebar .menu__logout {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .sidebar .menu__logout {
+    margin-top: 4rem;
+  }
+}
 .sidebar .menu__logout i {
-  margin-right: 15px;
+  margin-right: 1rem;
 }
 .sidebar .menu__logout:hover {
   background-color: #fff;
-  border-radius: 6px;
+  border-radius: 0.4rem;
   cursor: pointer;
 }
 
 .header-nav {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #B2B3A6;
-  padding-top: 5px;
+  border-bottom: 0.066rem solid #B2B3A6;
 }
 .header-nav .menu-top ul,
 .header-nav .search {
@@ -148,58 +243,89 @@ body {
   align-items: center;
 }
 .header-nav .menu-top ul li a {
-  padding: 0 10px;
-  font-size: 17px;
+  padding: 0 0.66rem;
+  font-size: 1.2rem;
 }
 .header-nav .menu-top ul li a:hover {
-  border-bottom: 3px solid #2ab82f;
+  border-bottom: 0.2rem solid #2ab82f;
   cursor: pointer;
 }
-.header-nav .search__text {
-  font-size: 17px;
-  margin-left: 10px;
+.header-nav .search__input {
+  outline: none;
+  font-family: "oswald";
+  font-weight: 800;
+  border: none;
+  border-radius: 5%;
+  text-transform: uppercase;
+  padding: 0.2rem 0.2rem 0 0.2rem;
 }
 .header-nav .search__icon {
-  width: 5px;
-  margin: 0 5px;
-  font-size: 13px;
+  width: 0.33rem;
+  margin: 0 0.53rem;
+  font-size: 0.86rem;
+}
+.header-nav .search__icon:hover {
+  cursor: pointer;
 }
 
-/*Content Card */
 .user-head {
-  padding-top: 25px;
+  padding-top: 0.6rem;
   font-family: "oswald";
   font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .user-head p {
-  font-size: 30px;
+  font-size: 2rem;
 }
-
 .user-head h3 {
-  font-size: 17px;
+  font-size: 1.13rem;
 }
-
 .user-head h3 span {
   color: #2ab82f;
 }
 
 .table-card {
-  margin-top: 5px;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  margin-top: 0.33rem;
+  border-top-left-radius: 0.66rem;
+  border-bottom-right-radius: 0.66rem;
   display: grid;
-  background-color: white;
-  padding: 5px 0 5px 10px;
+  background-color: #fff;
   animation: user 0.3s ease;
-  border-left: 3px solid transparent;
+  border-left: 0.2rem solid transparent;
 }
-
+.table-card--id {
+  background-color: #2ab82f;
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 30%;
+}
+@media (max-width: 37.5em) {
+  .table-card--id {
+    background-color: #2ab82f;
+  }
+}
+.table-card__ta-head {
+  font-size: 0.66rem;
+  text-align: left;
+  font-family: "wellfleet";
+}
+.table-card__ta-head th {
+  font-weight: normal;
+  display: grid;
+  text-align: left;
+  color: #B2B3A6;
+}
+.table-card__ta-head {
+  display: grid;
+  text-align: left;
+  color: black;
+  font-size: 0.6rem;
+  padding-top: 0.4rem;
+}
 .table-card:hover {
-  border-left: 3px solid #2ab82f;
+  border-left: 0.2rem solid #2ab82f;
   cursor: pointer;
 }
 
@@ -207,38 +333,18 @@ thead,
 tbody {
   display: grid;
   grid-template-columns: 1% 12% 10% 17% 15% 10% 10% 2%;
-  grid-gap: 20px;
+  grid-gap: 1.33rem;
 }
-
-.ta-head {
-  font-size: 10px;
-  text-align: left;
-  color: #b9b9b9;
-  font-family: "wellfleet";
-}
-
-thead .ta-head th {
-  font-weight: normal;
-  display: grid;
-  text-align: left;
-}
-
-.ta-body td {
-  font-size: 10px;
-}
-
-tbody .ta-head {
-  display: grid;
-  text-align: left;
-  color: black;
-  font-size: 9px;
-  padding-top: 6px;
+@media (max-width: 37.5em) {
+  thead,
+tbody {
+    display: grid;
+    grid-gap: 1.1rem;
+  }
 }
 
 .sticker {
-  font-size: 30px;
+  font-size: 2rem;
 }
-
-/*End Content Card */
 
 /*# sourceMappingURL=style.css.map */

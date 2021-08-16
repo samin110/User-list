@@ -1,28 +1,38 @@
 .header-nav {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid $color-bg-sideabr;
-  padding-top: 5px;
+  border-bottom: 0.066rem solid $color-bg-sideabr;
   @include header;
   .menu-top ul li a {
-    padding: 0 10px;
-    font-size: 17px;
+    padding: 0 0.66rem;
+    font-size: 1.2rem;
   }
   .menu-top ul li a:hover {
-    border-bottom: 3px solid $color-button;
+    border-bottom: 0.2rem solid $color-button;
     cursor: pointer;
   }
 
   .search {
-    &__text  {
-      font-size: 17px;
-      margin-left: 10px;
-    }
-	&__icon  {
-	  width: 5px;
-	  margin: 0 5px;
-	  font-size: 13px;
-	}
-  }
 
+    &__input {
+      outline: none;
+      font-family: "oswald";
+      font-weight: 800;
+      border: none;
+      border-radius: 5%;
+      text-transform: uppercase;
+      padding: 0.2rem 0.2rem 0 0.2rem;
+    }
+
+    &__icon {
+      width: 0.33rem;
+      margin: 0 0.53rem;
+      font-size: 0.86rem;
+      
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
 }

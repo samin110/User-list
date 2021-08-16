@@ -1,4 +1,5 @@
 @import "../abstracts/variables";
+@import "../abstracts/mixins";
 
 * {
 	padding: 0;
@@ -6,6 +7,24 @@
 	text-decoration: none;
 	list-style: none;
 	box-sizing: border-box;
+}
+
+html{
+	font-size: 15px;
+
+	@include responsive (large){
+		font-size: 95%;
+	}
+	@include responsive (medium){
+		font-size:86%;
+	}
+	
+	@include responsive (small){
+		font-size: 66%;
+	}
+	@include responsive(very-large){
+		font-size: 100%;
+	}
 }
 
 body{
@@ -21,10 +40,25 @@ body{
 	width: 80%;
 	height: 90%;
 	background-color: $color-content;
-	border-radius: 10px;
+	border-radius: 0.66rem;
+	@include responsive(small){
+		width: 95%;
+		height: 95%;
+	}
+	@include responsive(medium){
+		width:97%;
+		height: 95%;
+	}
+
   }
 
   .content {
 	flex: 5;
-	padding: 20px;
+	padding: 1.3rem;
+	@include responsive(medium){
+		padding: 1.3rem .5rem;
+	}
+	@include responsive(small){
+		padding: 1.3rem;
+	}
   }

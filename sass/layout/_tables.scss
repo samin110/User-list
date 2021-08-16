@@ -1,0 +1,80 @@
+@import "../abstracts/variables";
+
+.user-head {
+  padding-top: 0.6rem;
+  font-family: "oswald";
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & p {
+    font-size: 2rem;
+  }
+  & h3 {
+    font-size: 1.13rem;
+    & span {
+      color: $color-button;
+    }
+  }
+}
+
+.table-card {
+  margin-top: 0.33rem;
+  border-top-left-radius: 0.66rem;
+  border-bottom-right-radius: 0.66rem;
+  display: grid;
+  background-color: $color-white;
+  animation: user 0.3s ease;
+  border-left: 0.2rem solid transparent;
+  &--id {
+    background-color: $color-button;
+    color: $color-white;
+    padding: 0.4rem;
+    border-radius: 30%;
+
+    @include responsive(small) {
+      background-color: $color-button;
+    }
+  }
+
+  &__ta-head {
+    font-size: 0.66rem;
+    text-align: left;
+    font-family: "wellfleet";
+  }
+
+  &__ta-head th {
+    font-weight: normal;
+    display: grid;
+    text-align: left;
+    color: $color-bg-sideabr;
+  }
+
+  &__ta-head {
+    display: grid;
+    text-align: left;
+    color: black;
+    font-size: 0.6rem;
+    padding-top: 0.4rem;
+  }
+  &:hover {
+    border-left: 0.2rem solid $color-button;
+    cursor: pointer;
+  }
+}
+
+thead,
+tbody {
+  display: grid;
+  grid-template-columns: 1% 12% 10% 17% 15% 10% 10% 2%;
+  grid-gap: 1.33rem;
+  @include responsive(small) {
+    display: grid;
+    grid-gap: 1.1rem;
+  }
+}
+
+
+.sticker {
+  font-size: 2rem;
+}

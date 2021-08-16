@@ -1,14 +1,25 @@
 .btn {
-	font-size: 13px;
-	display: flex;
-	justify-content: space-between;
-	background-color: rgba($color-button, 1);
-	padding: 12px;
-	color: $color-white;
-	border-radius: 8px;
-	font-family: "wellfleet";
-	cursor: pointer;
-	.fa-plus:hover {
-	  color: rgb(61, 253, 2);
-	}
+  font-size: 0.86rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba($color-button, 1);
+  padding: 0.8rem;
+  color: $color-white;
+  border-radius: 0.53rem;
+  font-family: "wellfleet";
+  @include responsive(large) {
+    font-size: 0.61rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  @include responsive(small) {
+    font-size: 0.5rem;
+  }
+
+  cursor: pointer;
+  .fa-plus:hover {
+    color: rgb(61, 253, 2);
+  }
+}
